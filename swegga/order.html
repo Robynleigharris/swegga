@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Language" content="en-za" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="styling.css" />
+    <script src="order.js">
+
+    </script>
+    <title>ORDER</title>
+
+  </head>
+
+  <body>
+    <div id="page">
+      <div id="main">
+        <img src="swegga.jpg" alt="links" id="sidebar" />
+        <img src="delivery.gif" alt="del" id="banner" />
+        <img src="links.gif" alt="links" id="navigation" usemap="#workmap" />
+        <map name="workmap">
+		  <area shape="rect" coords="10,5,95,35" alt="home" href="order.html" />
+		  <area shape="rect" coords="105,5,190,35" alt="services" href="services.html" />
+		  <area shape="rect" coords="205,5,300,35" alt="products" href="products.html" />
+		  <area shape="rect" coords="310,5,440,35" alt="order status" href="orderStatus.html" />
+		  <area shape="rect" coords="450,5,555,35" alt="contact us" href="contactUs.html" />
+        </map>
+        <h1 class="caption">Product Summary</h1>
+        
+        <table>
+          <tr>
+            <th>Description</th>
+            <th>Size</th>
+            <th>colour</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>total</th>
+          </tr>          </tr>
+
+          <tr>
+            <td>female ski jackets</td>
+            <td>
+              <select>
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="red">red</option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
+              </select>
+            </td>
+            <td>150.95</td>
+            <td>
+              <input type="text" id="female_amount">
+          </td>
+          <td>
+            <input type="text" id="female_result"> 
+        </td>
+          </tr>
+          <tr>
+            <td>male ski jackets</td>
+            <td>
+              <select>
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="red">red</option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
+              </select>
+            </td>
+            <td>189.95</td>
+            <td>
+                <input type="Label" id="male_amount"> 
+            </td>
+            <td>
+              <input type="Label" id="male_result"> 
+          </td>
+          </tr>
+          <tr>
+            <td colspan="4">click to confirm and process your order:</td>
+            <td><input type="button" text="cost" id="total" onclick=totalcost()> </td>
+            <td>
+              <input type="text" id="end_result"> 
+          </td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <hr style="width: 100%; text-align: left; margin-left: 0" />
+        <footer class="copyright">
+          <p>@ 2014 Swegga Fashion - Examination number</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
